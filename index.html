@@ -479,30 +479,37 @@
       <div class="corner bl"></div>
       <div class="corner br"></div>
 
-      <div class="artifact-layer">
-        <img
-          id="custom-artifact-img"
-          src=""
-          alt="Hidden Artifact"
-          style="
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            object-position: center;
-            display: block;
-          "
-        />
-        <!-- Optional label shown below image on reveal -->
-        <div class="artifact-name custom-label" style="
-          position: absolute;
-          bottom: 0; left: 0; right: 0;
-          padding: 14px 20px 18px;
-          background: linear-gradient(transparent, rgba(10,8,4,0.85));
-          font-size: 12px;
-          letter-spacing: 3px;
-        ">The Hidden Relic</div>
-      </div>
+   <div class="artifact-layer">
+  <img
+    id="custom-artifact-img"
+    src=""
+    alt="Hidden Artifact"
+  />
 
+  <div class="artifact-name custom-label" style="
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 14px 20px 18px;
+    background: linear-gradient(transparent, rgba(10,8,4,0.85));
+    font-size: 12px;
+    letter-spacing: 3px;
+  ">
+    The Hidden Relic
+  </div>
+</div>
+      #custom-artifact-img {
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+  object-fit: contain;
+  object-position: center;
+  display: block;
+  background: #0e0b05;
+}
+        />
+        
       <canvas class="scratch-canvas" id="canvas4"></canvas>
       <div class="reveal-badge">REVEALED</div>
     </div>
